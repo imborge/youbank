@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YouBank</string>
+    <string name="footer">2013 (c) Børge André Jensen</string>
+    <string name="active_loans">Active loans</string>
+    <string name="history">History</string>
+    <string name="new_loan">New loan</string>
+    <string name="add_loan_btn">New loan</string>
+    <string name="new_loan_name">Loan to:</string>
+    <string name="amount_to_loan">Loan amount:</string>
+    <string name="radio_borrow_from">Borrow from:</string>
+    <string name="radio_loan_to">Loan to:</string>
+    <string name="newloan_duedate">Due date</string><string name="newloan_btnsave">Save</string><string name="manageloan_header">Manage loan</string><string name="manageloan_duedate_edit">Edit</string><string name="manageloan_makepayment">Make payment</string>
+</resources>

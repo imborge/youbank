@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="5dp"
+              android:paddingBottom="5dp">
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_loan"
+                    android:textSize="20sp" android:padding="5dp" android:layout_gravity="left|center_vertical"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_loan_to"
+                        android:id="@+id/radioBorrowTo" android:layout_gravity="left|center_vertical"
+                        android:onClick="onRadioButtonClicked" android:paddingRight="10dp" android:checked="true"/>
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_borrow_from"
+                        android:id="@+id/radioBorrowFrom" android:layout_gravity="right|center_vertical"
+                        android:onClick="onRadioButtonClicked" android:gravity="center_vertical|right"/>
+            </RadioGroup>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_loan_name"
+                    android:id="@+id/tvToFrom"
+                    android:layout_gravity="left|center_vertical"
+                    android:enabled="true"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTo"
+                    android:layout_gravity="left|center_vertical"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount_to_loan"
+                    android:id="@+id/tvToFrom"
+                    android:layout_gravity="left|center_vertical"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtAmount"
+                    android:layout_gravity="left|center_vertical"
+                    android:numeric="integer|decimal"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/newloan_duedate"
+                    android:id="@+id/tvDueDate" android:layout_gravity="left|center_vertical" android:focusable="false"/>
+            <DatePicker
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dateDue" android:layout_gravity="left|center_vertical" android:paddingTop="5dp"
+                    android:paddingBottom="5dp"/>
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/newloan_btnsave"
+                    android:id="@+id/btnSave" android:layout_gravity="left|center_vertical"
+                    android:onClick="onBtnSaveClicked"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

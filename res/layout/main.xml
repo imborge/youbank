@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="5dp"
+              android:paddingBottom="5dp">
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_loan_btn"
+            android:id="@+id/btnNewLoan" android:layout_gravity="left|center_vertical"/>
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:id="@+id/scrollView" android:layout_gravity="left|center_vertical">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/active_loans"
+                    android:textSize="20sp" android:padding="5dp"/>
+            <ListView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lvActiveLoans"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/footer"
+                    android:id="@+id/tvFooter"
+                    android:layout_gravity="center|bottom"
+                    android:gravity="bottom" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
