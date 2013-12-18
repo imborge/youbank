@@ -10,5 +10,14 @@
     <string name="amount_to_loan">Loan amount:</string>
     <string name="radio_borrow_from">Borrow from:</string>
     <string name="radio_loan_to">Loan to:</string>
-    <string name="newloan_duedate">Due date</string><string name="newloan_btnsave">Save</string><string name="manageloan_header">Manage loan</string><string name="manageloan_duedate_edit">Edit</string><string name="manageloan_makepayment">Make payment</string>
+    <string name="newloan_duedate">Due date</string>
+    <string name="newloan_btnsave">Save</string>
+    <string name="manageloan_header">Manage loan</string>
+    <string name="manageloan_duedate_edit">Edit</string>
+    <string name="manageloan_makepayment">Pay back</string>
+    <string name="manageloan_loanmore">Loan more</string>
+    <string name="manageloan_borrowmore">Borrow more</string>
+    <string name="manageloan_getpayed">Get payed</string>
+    <string name="manageloan_amount">Amount:</string>
+    <string name="newtransaction_header">New transaction</string><string name="main_total_sum">Total:</string>
 </resources>

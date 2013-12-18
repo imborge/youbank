@@ -5,61 +5,85 @@
               android:layout_height="fill_parent"
               android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="5dp"
               android:paddingBottom="5dp">
-    <ScrollView
+    <LinearLayout
+            android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/scrollView">
+            android:layout_height="fill_parent">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/manageloan_header"
+                android:textSize="20sp" android:padding="5dp" android:layout_gravity="left|center_vertical"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="{Person} owes you 5000 money."
+                android:id="@+id/tvLoanString" android:layout_gravity="left|center_vertical" android:paddingLeft="5dp"
+                android:paddingRight="5dp" android:singleLine="false"/>
         <LinearLayout
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                android:layout_height="wrap_content">
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/manageloan_header"
-                    android:textSize="20sp" android:padding="5dp" android:layout_gravity="left|center_vertical"/>
+                    android:text="Due date: "
+                    android:id="@+id/textView" android:layout_gravity="left|center_vertical" android:focusable="false"
+                    android:padding="5dp"/>
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="{Person} owes you 5000 money."
+                    android:text="24.12.2013"
+                    android:id="@+id/tvDueDate" android:gravity="center_vertical|left" android:paddingBottom="5dp"
+                    android:layout_gravity="center_vertical" android:paddingTop="5dp"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/manageloan_duedate_edit"
+                    android:id="@+id/btnEditDueDate" android:textSize="8dp" android:onClick="onButtonClick"
+                    android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/manageloan_amount"
                     android:id="@+id/textView" android:layout_gravity="left|center_vertical" android:paddingLeft="5dp"
-                    android:paddingRight="5dp" android:singleLine="false"/>
+                    android:password="false" android:paddingBottom="5dp" android:paddingRight="5dp"/>
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Amount: 5000"
-                    android:id="@+id/textView1" android:layout_gravity="left|center_vertical" android:padding="5dp"/>
-            <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Due date: 12.02.2013"
-                        android:id="@+id/tvDueDate" android:layout_gravity="left|center_vertical" android:focusable="false"
-                        android:paddingLeft="5dp" android:paddingRight="5dp" android:paddingBottom="5dp"/>
-                <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:text="@string/manageloan_duedate_edit"
-                        android:id="@+id/button1" android:textSize="8dp"/>
-            </LinearLayout>
+                    android:text="5000"
+                    android:id="@+id/tvAmount" android:layout_gravity="center_vertical" android:paddingBottom="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/manageloan_makepayment"
-                    android:id="@+id/button" android:singleLine="true"/>
-            <TextView
+                    android:id="@+id/btnPayBack" android:singleLine="true" android:onClick="onButtonClick"/>
+            <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="History"
-                    android:id="@+id/textView2" android:layout_gravity="left|center_vertical"/>
-            <ListView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/listView" android:layout_gravity="left|center_vertical"/>
+                    android:text="@string/manageloan_loanmore"
+                    android:id="@+id/btnBorrowMore" android:onClick="onButtonClick"/>
         </LinearLayout>
-    </ScrollView>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History"
+                android:id="@+id/textView2" android:layout_gravity="left|center_vertical"
+                android:paddingLeft="5dp" android:paddingRight="5dp" android:textSize="20sp"/>
+        <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/list" android:layout_gravity="left|center_vertical"/>
+    </LinearLayout>
 </LinearLayout>
 

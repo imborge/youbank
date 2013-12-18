@@ -46,7 +46,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/txtTo"
-                    android:layout_gravity="left|center_vertical"/>
+                    android:layout_gravity="left|center_vertical" android:hint="Person" android:singleLine="true"/>
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/txtAmount"
                     android:layout_gravity="left|center_vertical"
-                    android:numeric="integer|decimal"/>
+                    android:numeric="integer|decimal" android:hint="Amount" android:singleLine="true"/>
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

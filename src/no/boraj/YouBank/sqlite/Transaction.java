@@ -1,4 +1,4 @@
-package no.msys.YouBank.sqlite;
+package no.boraj.YouBank.sqlite;
 
 import java.math.BigDecimal;
 import java.util.Date;

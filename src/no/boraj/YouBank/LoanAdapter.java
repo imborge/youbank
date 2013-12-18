@@ -1,4 +1,4 @@
-package no.msys.YouBank;
+package no.boraj.YouBank;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -7,9 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-import no.msys.YouBank.sqlite.Loan;
+import no.boraj.YouBank.sqlite.Loan;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -50,17 +49,14 @@ public class LoanAdapter extends BaseAdapter {
         TextView tvName = (TextView) view.findViewById(R.id.tvName);
         TextView tvSum = (TextView) view.findViewById(R.id.tvSum);
 
-        String plus = "";
-
-        if (loan.getAmount().compareTo(BigDecimal.ZERO) == -1) {
+        if (loan.isNegative()) {
             tvSum.setTextColor(Color.RED);
         } else {
             tvSum.setTextColor(Color.GREEN);
-            plus = "+";
         }
 
         tvName.setText(loan.getPersonName());
-        tvSum.setText(plus + loan.getAmount().toString());
+        tvSum.setText(loan.getAmountStr());
 
         return view;
     }

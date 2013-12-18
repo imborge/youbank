@@ -1,7 +1,7 @@
 /*___Generated_by_IDEA___*/
 
 /** Automatically generated file. DO NOT MODIFY */
-package no.msys.YouBank;
+package no.boraj.YouBank;
 
 public final class BuildConfig {
     public final static boolean DEBUG = true;

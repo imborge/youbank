@@ -1,4 +1,4 @@
-package no.msys.YouBank.sqlite;
+package no.boraj.YouBank.sqlite;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -33,13 +33,13 @@ public class SQLiteHelper extends SQLiteOpenHelper {
             + TABLE_LOANS + "("
             + COLUMN_COMMON_ID + " integer primary key autoincrement,"
             + COLUMN_LOANS_PERSON + " text not null,"
-            + COLUMN_LOANS_DUEDATE + " DATE);";
+            + COLUMN_LOANS_DUEDATE + " BIGINT not null);";
 
     private static final String TABLE_TRANSACTIONS_CREATE = "create table "
             + TABLE_TRANSACTIONS + "("
             + COLUMN_COMMON_ID + " integer primary key autoincrement,"
             + COLUMN_TRANSACTIONS_LOANID + " integer not null,"
-            + COLUMN_TRANSACTIONS_DATE + " DATE default (datetime('now','localtime')),"
+            + COLUMN_TRANSACTIONS_DATE + " BIGINT not null,"
             + COLUMN_TRANSACTIONS_AMOUNT + " decimal(13,4) not null);";
 
     public SQLiteHelper(Context context) {

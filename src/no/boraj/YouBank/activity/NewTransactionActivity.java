@@ -1,4 +1,4 @@
-package no.msys.YouBank.activity;
+package no.boraj.YouBank.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.os.Bundle;
  * Author: Børge André Jensen
  * Author URL: http://borgizzle.com/
  */
-public class LoanStatusActivity extends Activity {
+public class NewTransactionActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }

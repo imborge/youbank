@@ -1,14 +1,14 @@
-package no.msys.YouBank.activity;
+package no.boraj.YouBank.activity;
 
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
-import no.msys.YouBank.R;
-import no.msys.YouBank.sqlite.Loan;
-import no.msys.YouBank.sqlite.LoanDataSource;
-import no.msys.YouBank.sqlite.MyDAO;
+import no.boraj.YouBank.R;
+import no.boraj.YouBank.sqlite.Loan;
+import no.boraj.YouBank.sqlite.MyDAO;
+import no.boraj.YouBank.sqlite.Transaction;
 
 import java.math.BigDecimal;
 import java.sql.SQLException;
@@ -49,24 +49,34 @@ public class NewLoanActivity extends Activity {
     }
 
     public void onBtnSaveClicked(View view) {
-        Context context = getApplicationContext();
-        Loan loan = new Loan();
-        loan.setPersonName(txtTo.getText().toString());
+        if (txtTo.getText().toString().equals("") && txtAmount.getText().toString().equals("")) {
+            txtTo.setError("Required");
+            txtAmount.setError("Required");
+        } else if (txtTo.getText().toString().equals("")) {
+            txtTo.setError("Required.");
+        } else if (txtAmount.getText().toString().equals("")) {
+            txtAmount.setError("Required.");
+        } else {
+            Context context = getApplicationContext();
+            Loan loan = new Loan();
+            loan.setPersonName(txtTo.getText().toString().trim());
+            loan.setDueDate(dateDue);
 
-        BigDecimal amount = new BigDecimal(txtAmount.getText().toString());
+            BigDecimal amount = new BigDecimal(txtAmount.getText().toString());
 
-        if (radioFrom.isChecked()) {
-            amount = amount.multiply(new BigDecimal("-1"));
+            if (radioFrom.isChecked()) {
+                amount = amount.multiply(new BigDecimal("-1"));
+            }
+
+            Transaction t = new Transaction();
+            t.setAmount(amount);
+
+            long id = dao.createLoan(loan, t);
+
+            Toast toast = Toast.makeText(context, "Saved.", Toast.LENGTH_SHORT);
+            finish();
+            toast.show();
         }
-
-        loan.setAmount(amount);
-        loan.setDueDate(dateDue);
-
-        long id = dataSource.createLoan(loan);
-
-        Toast toast = Toast.makeText(context, "Saved with id: " + id, Toast.LENGTH_SHORT);
-        finish();
-        toast.show();
     }
 
     public void onRadioButtonClicked(View view) {

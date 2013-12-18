@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="no.msys.YouBank"
+          package="no.boraj.YouBank"
           android:versionCode="1"
           android:versionName="1.0">
     <uses-sdk android:minSdkVersion="8"/>
-    <application android:label="@string/app_name" android:debuggable="true">
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:debuggable="true">
         <activity android:name=".activity.LoansActivity"
                   android:label="@string/app_name">
             <intent-filter>
@@ -13,7 +13,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.NewLoanActivity"/>
-        <activity android:name=".activity.LoanStatusActivity"/>
         <activity android:name=".activity.ManageLoanActivity"/>
+        <activity android:name=".activity.NewTransactionActivity"/>
     </application>
 </manifest> 

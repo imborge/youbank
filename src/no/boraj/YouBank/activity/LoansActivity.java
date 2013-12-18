@@ -1,30 +1,26 @@
-package no.msys.YouBank.activity;
+package no.boraj.YouBank.activity;
 
+import java.math.BigDecimal;
+import java.sql.SQLException;
+import java.util.List;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.ListView;
-import no.msys.YouBank.sqlite.Loan;
-import no.msys.YouBank.LoanAdapter;
-import no.msys.YouBank.R;
-import no.msys.YouBank.sqlite.LoanDataSource;
-
-import java.math.BigDecimal;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
+import android.widget.*;
+import no.boraj.YouBank.sqlite.Loan;
+import no.boraj.YouBank.LoanAdapter;
+import no.boraj.YouBank.R;
+import no.boraj.YouBank.sqlite.MyDAO;
 
 public class LoansActivity extends Activity {
-    private LoanDataSource dataSource;
+    private MyDAO dao;
     private ListView gvActiveLoans;
-    private LoanAdapter loanAdapter;
     private List<Loan> loans;
+    private TextView tvTotalSum;
     /**
      * Called when the activity is first created.
      */
@@ -33,41 +29,32 @@ public class LoansActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        dataSource = new LoanDataSource(this);
+        dao = new MyDAO(this);
         try {
-            dataSource.open();
+            dao.open();
         } catch (SQLException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
 
-        loans = dataSource.getAllLoans();
+        loans = dao.getAllLoans();
 
-        loanAdapter = new LoanAdapter(this, this.loans);
+        gvActiveLoans = (ListView) findViewById(R.id.lvActiveLoans);
+        tvTotalSum = (TextView) findViewById(R.id.tvTotalSum);
 
-        gvActiveLoans = (ListView)findViewById(R.id.lvActiveLoans);
-        gvActiveLoans.setAdapter(loanAdapter);
+        updateView();
 
+        // for usage in event listeners
         final LoansActivity xthis = this;
 
         gvActiveLoans.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+                Loan loan = loans.get(i);
                 Intent intent = new Intent(xthis, ManageLoanActivity.class);
-                startActivity(intent);
-//                AlertDialog.Builder dlgAlert = new AlertDialog.Builder(xthis);
-//                Loan loan = loans.get(i);
-//                String message = "";
-//                if (loan.getAmount().compareTo(BigDecimal.ZERO) == -1) {
-//                    BigDecimal positive_sum = loan.getAmount().multiply(new BigDecimal("-1"));
-//                    message = String.format("You owe %s %s money.", loan.getPersonName(), positive_sum.toString());
-//                } else {
-//                    message = String.format("%s owes you %s money.", loan.getPersonName(), loan.getAmount().plus().toString());
-//                }
-//                dlgAlert.setMessage(message);
-//                dlgAlert.setTitle("Loan status");
-//                dlgAlert.setPositiveButton("Ok", null);
-//                dlgAlert.create().show();
+                Bundle b = new Bundle();
+                b.putLong("loanId", loan.getId());
+                intent.putExtras(b);
+                startActivityForResult(intent, 0);
             }
         });
 
@@ -83,15 +70,17 @@ public class LoansActivity extends Activity {
                 dlgAlert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        dataSource.deleteLoan(loan);
-                        loans = dataSource.getAllLoans();
-                        gvActiveLoans.setAdapter(new LoanAdapter(xthis, loans));
-                        loanAdapter.notifyDataSetChanged();
+                        dao.deleteLoan(loan);
+
+                        updateView();
+
+                        Toast toast = Toast.makeText(getApplicationContext(), "Deleted.", Toast.LENGTH_SHORT);
+                        toast.show();
                     }
                 });
                 dlgAlert.setNegativeButton("No", null);
                 dlgAlert.create().show();
-                return false;  //To change body of implemented methods use File | Settings | File Templates.
+                return false;
             }
         });
 
@@ -105,12 +94,20 @@ public class LoansActivity extends Activity {
         });
     }
 
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Log.d("onActivityResult", "woopwoop!");
-        loans = dataSource.getAllLoans();
-
-        // TODO: Find another way to refresh the ListView, this feels way to hackish
+    private void updateView() {
+        loans = dao.getAllLoans();
         gvActiveLoans.setAdapter(new LoanAdapter(this, loans));
-        loanAdapter.notifyDataSetChanged();
+        BigDecimal sum = BigDecimal.ZERO;
+        for (Loan x : loans) {
+            sum = sum.add(x.getAmount());
+        }
+
+        String sumText = (sum.compareTo(BigDecimal.ZERO) == -1) ? sum.toString() : "+" + sum.toString();
+        tvTotalSum.setTextColor((sum.compareTo(BigDecimal.ZERO) == -1) ? Color.RED : Color.GREEN);
+        tvTotalSum.setText(sumText);
+    }
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        updateView();
     }
 }

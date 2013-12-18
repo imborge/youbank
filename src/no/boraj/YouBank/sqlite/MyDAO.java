@@ -1,4 +1,4 @@
-package no.msys.YouBank.sqlite;
+package no.boraj.YouBank.sqlite;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -7,10 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 import java.math.BigDecimal;
 import java.sql.SQLException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Author: Børge André Jensen
@@ -19,9 +16,11 @@ import java.util.List;
 public class MyDAO {
     private SQLiteDatabase db;
     private SQLiteHelper dbHelper;
+    private Calendar calendar;
 
     public MyDAO(Context context) {
         dbHelper = new SQLiteHelper(context);
+        calendar = Calendar.getInstance();
     }
 
     public void open() throws SQLException {
@@ -34,10 +33,16 @@ public class MyDAO {
         }
     }
 
+    public void editLoanDueDate(Loan loan) {
+        ContentValues values = new ContentValues();
+        values.put(SQLiteHelper.COLUMN_LOANS_DUEDATE, loan.getDueDate().getTime());
+        db.update(SQLiteHelper.TABLE_LOANS, values, SQLiteHelper.COLUMN_COMMON_ID + " = " + loan.getId(), null);
+    }
+
     public long createLoan(Loan loan, Transaction transaction) {
         ContentValues values = new ContentValues();
         values.put(SQLiteHelper.COLUMN_LOANS_PERSON, loan.getPersonName());
-        values.put(SQLiteHelper.COLUMN_LOANS_DUEDATE, loan.getPersonName());
+        values.put(SQLiteHelper.COLUMN_LOANS_DUEDATE, loan.getDueDate().getTime());
 
         long loanId = db.insert(SQLiteHelper.TABLE_LOANS, null, values);
 
@@ -46,11 +51,27 @@ public class MyDAO {
 
         long transId = createTransaction(loanIdLoan, transaction);
 
-        return 0;
+        return loanId;
     }
 
     public void deleteLoan(Loan loan) {
+        deleteTransactions(loan.getTransactions());
         db.delete(SQLiteHelper.TABLE_LOANS, SQLiteHelper.COLUMN_COMMON_ID + " = " + loan.getId(), null);
+    }
+
+    public Loan getLoan(Loan loan) {
+        Loan out = new Loan();
+
+        String query = String.format("SELECT %s, %s, %s FROM %s WHERE %s = %s", SQLiteHelper.COLUMN_COMMON_ID, SQLiteHelper.COLUMN_LOANS_PERSON, SQLiteHelper.COLUMN_LOANS_DUEDATE, SQLiteHelper.TABLE_LOANS, SQLiteHelper.COLUMN_COMMON_ID, loan.getId());
+        Cursor cursor = db.rawQuery(query, null);
+        cursor.moveToFirst();
+
+        out.setId(cursor.getLong(0));
+        out.setPersonName(cursor.getString(1));
+        out.setDueDate(new Date(cursor.getLong(2)));
+
+        out.setTransactions(getAllTransactionsForLoan(loan));
+        return out;
     }
 
     public List<Loan> getAllLoans() {
@@ -63,14 +84,9 @@ public class MyDAO {
             Loan loan = new Loan();
             loan.setId(cursor.getInt(0));
             loan.setPersonName(cursor.getString(1));
+            loan.setDueDate(new Date(cursor.getLong(2)));
 
-            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-DD");
-            try {
-                loan.setDueDate(dateFormat.parse(cursor.getString(2)));
-            } catch (ParseException e) {
-                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-            }
-
+            loans.add(loan);
             cursor.moveToNext();
         }
 
@@ -89,6 +105,8 @@ public class MyDAO {
         ContentValues values = new ContentValues();
         values.put(SQLiteHelper.COLUMN_TRANSACTIONS_AMOUNT, transaction.getAmount().toString());
         values.put(SQLiteHelper.COLUMN_TRANSACTIONS_LOANID, loan.getId());
+        calendar.setTime(new Date());
+        values.put(SQLiteHelper.COLUMN_TRANSACTIONS_DATE, calendar.getTimeInMillis());
 
         return db.insert(SQLiteHelper.TABLE_TRANSACTIONS, null, values);
     }
@@ -97,15 +115,28 @@ public class MyDAO {
         db.delete(SQLiteHelper.TABLE_TRANSACTIONS, SQLiteHelper.COLUMN_COMMON_ID + " = " + transaction.getId(), null);
     }
 
+    public void deleteTransactions(List<Transaction> transactions) {
+        StringBuilder sb = new StringBuilder();
+        for (Transaction t : transactions) {
+            sb.append(t.getId());
+            sb.append(",");
+        }
+        sb.deleteCharAt(sb.length() - 1);
+
+        String query = String.format("delete from %s where %s in(%s)", SQLiteHelper.TABLE_TRANSACTIONS, SQLiteHelper.COLUMN_COMMON_ID, sb.toString());
+        db.execSQL(query);
+    }
+
     public List<Transaction> getAllTransactionsForLoan(Loan loan) {
         List<Transaction> transactions = new ArrayList<Transaction>();
-        String query = String.format("SELECT %s,%s,%s,%s FROM %s WHERE %s = %s",
+        String query = String.format("SELECT %s,%s,%s,%s FROM %s WHERE %s = %s ORDER BY %s desc",
                 SQLiteHelper.COLUMN_COMMON_ID,
                 SQLiteHelper.COLUMN_TRANSACTIONS_LOANID,
                 SQLiteHelper.COLUMN_TRANSACTIONS_DATE,
                 SQLiteHelper.COLUMN_TRANSACTIONS_AMOUNT,
                 SQLiteHelper.TABLE_TRANSACTIONS, // Table
-                SQLiteHelper.COLUMN_TRANSACTIONS_LOANID, loan.getId()); // WHERE =
+                SQLiteHelper.COLUMN_TRANSACTIONS_LOANID, loan.getId(), // WHERE =
+                SQLiteHelper.COLUMN_COMMON_ID); // ORDER BY
         Cursor cursor = db.rawQuery(query, null);
         cursor.moveToFirst();
 
@@ -113,16 +144,11 @@ public class MyDAO {
             Transaction t = new Transaction();
             t.setId(cursor.getInt(0));
             t.setLoanId(cursor.getInt(1));
-            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-DD");
-            try {
-                t.setDate(dateFormat.parse(cursor.getString(2)));
-            } catch (ParseException e) {
-                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-            }
+            calendar.setTimeInMillis(cursor.getLong(2));
+            t.setDate(calendar.getTime());
             t.setAmount(new BigDecimal(cursor.getString(3)));
 
             transactions.add(t);
-
             cursor.moveToNext();
         }
 
