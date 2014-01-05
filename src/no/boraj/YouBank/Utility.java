@@ -40,4 +40,9 @@ public class Utility {
 
         return String.format("%s %s, %s", strMonths[month], dayOfMonth, year);
     }
+
+    public static class Color {
+        public static final int GREEN = android.graphics.Color.rgb(0x66, 0x99, 0x00);
+        public static final int RED = android.graphics.Color.rgb(0xff, 0x44, 0x44);
+    }
 }

@@ -50,9 +50,9 @@ public class LoanAdapter extends BaseAdapter {
         TextView tvSum = (TextView) view.findViewById(R.id.tvSum);
 
         if (loan.isNegative()) {
-            tvSum.setTextColor(Color.RED);
+            tvSum.setTextColor(Utility.Color.RED);
         } else {
-            tvSum.setTextColor(Color.GREEN);
+            tvSum.setTextColor(Utility.Color.GREEN);
         }
 
         tvName.setText(loan.getPersonName());

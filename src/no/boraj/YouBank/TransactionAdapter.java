@@ -54,9 +54,9 @@ public class TransactionAdapter extends BaseAdapter {
         String plus = "";
 
         if (transaction.getAmount().compareTo(BigDecimal.ZERO) == -1) {
-            tvSum.setTextColor(Color.RED);
+            tvSum.setTextColor(Utility.Color.RED);
         } else {
-            tvSum.setTextColor(Color.GREEN);
+            tvSum.setTextColor(Utility.Color.GREEN);
             plus = "+";
         }
 

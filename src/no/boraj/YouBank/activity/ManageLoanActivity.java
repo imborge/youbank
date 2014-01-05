@@ -36,7 +36,7 @@ public class ManageLoanActivity extends Activity {
         loan = l;
 
         String loanString = "";
-        if (loan.isNegative()) {//.getAmount().compareTo(BigDecimal.ZERO) == -1) {
+        if (loan.isNegative()) {
             BigDecimal positive_sum = loan.getAmount().multiply(new BigDecimal("-1"));
             loanString = String.format("You owe %s %s money.", loan.getPersonName(), positive_sum.toString());
         } else {
@@ -44,7 +44,7 @@ public class ManageLoanActivity extends Activity {
         }
         tvLoanString.setText(loanString);
         tvAmount.setText(loan.getAmountStr());
-        tvAmount.setTextColor(loan.isNegative() ? Color.RED : Color.GREEN);
+        tvAmount.setTextColor(loan.isNegative() ? Utility.Color.RED : Utility.Color.GREEN);
 
         tvDueDate.setText(Utility.dateToStr(loan.getDueDate()));
 
@@ -53,8 +53,6 @@ public class ManageLoanActivity extends Activity {
 
         transactionAdapter = new TransactionAdapter(this, loan.getTransactions());
         listTransactions.setAdapter(transactionAdapter);
-
-
     }
 
     public void onCreate(Bundle savedInstanceState) {

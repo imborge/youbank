@@ -33,7 +33,7 @@
         <ListView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/lvActiveLoans"/>
+                android:id="@+id/lvActiveLoans" android:clickable="false"/>
     </ScrollView>
 </LinearLayout>
 

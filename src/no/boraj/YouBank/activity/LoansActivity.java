@@ -11,6 +11,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
+import no.boraj.YouBank.Utility;
 import no.boraj.YouBank.sqlite.Loan;
 import no.boraj.YouBank.LoanAdapter;
 import no.boraj.YouBank.R;
@@ -103,7 +104,7 @@ public class LoansActivity extends Activity {
         }
 
         String sumText = (sum.compareTo(BigDecimal.ZERO) == -1) ? sum.toString() : "+" + sum.toString();
-        tvTotalSum.setTextColor((sum.compareTo(BigDecimal.ZERO) == -1) ? Color.RED : Color.GREEN);
+        tvTotalSum.setTextColor((sum.compareTo(BigDecimal.ZERO) == -1) ? Utility.Color.RED : Utility.Color.GREEN);
         tvTotalSum.setText(sumText);
     }
 

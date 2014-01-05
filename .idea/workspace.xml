@@ -29,42 +29,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c14c436-0d38-4a36-abd3-32035a008915" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/no/boraj/YouBank/activity/ManageLoanActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/no/boraj/YouBank/TransactionAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/no/boraj/YouBank/Utility.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/newtransaction.xml" />
-      <change type="DELETED" beforePath="C:\Users\BørgeAndre\IdeaProjects\YouBank\src\no\msys\YouBank\activity\ManageLoanActivity.java" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\BørgeAndre\IdeaProjects\YouBank\gen\no\msys\YouBank\BuildConfig.java" afterPath="$PROJECT_DIR$/gen/no/boraj/YouBank/BuildConfig.java" />
-      <change type="MOVED" beforePath="C:\Users\BørgeAndre\IdeaProjects\YouBank\gen\no\msys\YouBank\Manifest.java" afterPath="$PROJECT_DIR$/gen/no/boraj/YouBank/Manifest.java" />
-      <change type="MOVED" beforePath="C:\Users\BørgeAndre\IdeaProjects\YouBank\gen\no\msys\YouBank\R.java" afterPath="$PROJECT_DIR$/gen/no/boraj/YouBank/R.java" />
-      <change type="MOVED" beforePath="C:\Users\BørgeAndre\IdeaProjects\YouBank\src\no\msys\YouBank\LoanAdapter.java" afterPath="$PROJECT_DIR$/src/no/boraj/YouBank/LoanAdapter.java" />
-      <change type="MOVED" beforePath="C:\Users\BørgeAndre\IdeaProjects\YouBank\src\no\msys\YouBank\activity\LoanStatusActivity.java" afterPath="$PROJECT_DIR$/src/no/boraj/YouBank/activity/NewTransactionActivity.java" />
-      <change type="MOVED" beforePath="C:\Users\BørgeAndre\IdeaProjects\YouBank\src\no\msys\YouBank\activity\LoansActivity.java" afterPath="$PROJECT_DIR$/src/no/boraj/YouBank/activity/LoansActivity.java" />
-      <change type="MOVED" beforePath="C:\Users\BørgeAndre\IdeaProjects\YouBank\src\no\msys\YouBank\activity\NewLoanActivity.java" afterPath="$PROJECT_DIR$/src/no/boraj/YouBank/activity/NewLoanActivity.java" />
-      <change type="MOVED" beforePath="C:\Users\BørgeAndre\IdeaProjects\YouBank\src\no\msys\YouBank\sqlite\Loan.java" afterPath="$PROJECT_DIR$/src/no/boraj/YouBank/sqlite/Loan.java" />
-      <change type="MOVED" beforePath="C:\Users\BørgeAndre\IdeaProjects\YouBank\src\no\msys\YouBank\sqlite\MyDAO.java" afterPath="$PROJECT_DIR$/src/no/boraj/YouBank/sqlite/MyDAO.java" />
-      <change type="MOVED" beforePath="C:\Users\BørgeAndre\IdeaProjects\YouBank\src\no\msys\YouBank\sqlite\SQLiteHelper.java" afterPath="$PROJECT_DIR$/src/no/boraj/YouBank/sqlite/SQLiteHelper.java" />
-      <change type="MOVED" beforePath="C:\Users\BørgeAndre\IdeaProjects\YouBank\src\no\msys\YouBank\sqlite\Transaction.java" afterPath="$PROJECT_DIR$/src/no/boraj/YouBank/sqlite/Transaction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/drawable-ldpi/ic_launcher.png" />
+      <change type="MOVED" beforePath="C:\Users\BørgeAndre\IdeaProjects\YouBank\res\drawable\ic_launcher.png" afterPath="$PROJECT_DIR$/res/drawable/drawable-xxhdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/no/boraj/YouBank/LoanAdapter.java" afterPath="$PROJECT_DIR$/src/no/boraj/YouBank/LoanAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/no/boraj/YouBank/activity/LoansActivity.java" afterPath="$PROJECT_DIR$/src/no/boraj/YouBank/activity/LoansActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/no/boraj/YouBank/activity/ManageLoanActivity.java" afterPath="$PROJECT_DIR$/src/no/boraj/YouBank/activity/ManageLoanActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/no/boraj/YouBank/TransactionAdapter.java" afterPath="$PROJECT_DIR$/src/no/boraj/YouBank/TransactionAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/no/boraj/YouBank/Utility.java" afterPath="$PROJECT_DIR$/src/no/boraj/YouBank/Utility.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/loanlist.xml" afterPath="$PROJECT_DIR$/res/layout/loanlist.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/manageloan.xml" afterPath="$PROJECT_DIR$/res/layout/manageloan.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/newloan.xml" afterPath="$PROJECT_DIR$/res/layout/newloan.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YouBank.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/strings.xml" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1386281639423" ignored="false" />
     <file path="/main.xml" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1385905415814" ignored="false" />
-    <file path="/LoansActivity.java" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1387380378170" ignored="false" />
+    <file path="/LoansActivity.java" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1387493773060" ignored="false" />
     <file path="/fragment.java" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1387314879925" ignored="false" />
-    <file path="/Dummy.txt" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1387310613340" ignored="false" />
+    <file path="/Dummy.txt" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1388504589118" ignored="false" />
     <file path="/TwoTextRow.xml" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1385757371664" ignored="false" />
-    <file path="/LoanAdapter.java" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1387314632976" ignored="false" />
+    <file path="/LoanAdapter.java" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1387493713198" ignored="false" />
     <file path="/Loan.java" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1387313638314" ignored="false" />
-    <file path="/loanlist.xml" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1385760002786" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1387380132796" ignored="false" />
+    <file path="/loanlist.xml" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1387481887173" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1387583776727" ignored="false" />
     <file path="/newloan.xml" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1385838191474" ignored="false" />
     <file path="/NewLoanActivity.java" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1386283140173" ignored="false" />
     <file path="/SQLiteHelper.java" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1386022101128" ignored="false" />
@@ -72,10 +59,10 @@
     <file path="/ManageLoanActivity.java" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1387313716059" ignored="false" />
     <file path="/Transaction.java" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1386025669277" ignored="false" />
     <file path="/MyDAO.java" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1386198856336" ignored="false" />
-    <file path="/TransactionAdapter.java" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1386280022108" ignored="false" />
-    <file path="/a.dummy" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1387314863379" ignored="false" />
+    <file path="/TransactionAdapter.java" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1387493757477" ignored="false" />
+    <file path="/a.dummy" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1387493730570" ignored="false" />
     <file path="/NewTransactionActivity.java" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1386186151049" ignored="false" />
-    <file path="/Utility.java" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1386279964644" ignored="false" />
+    <file path="/Utility.java" changelist="8c14c436-0d38-4a36-abd3-32035a008915" time="1387493680624" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +82,7 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -131,7 +119,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -144,16 +131,7 @@
       <file leaf-file-name="ManageLoanActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/activity/ManageLoanActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="48" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewTransactionActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/activity/NewTransactionActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="1" selection-start="327" selection-end="327" vertical-scroll-proportion="-8.16">
+            <state line="54" column="56" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -162,39 +140,7 @@
       <file leaf-file-name="NewLoanActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/activity/NewLoanActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="37" selection-start="1788" selection-end="1790" vertical-scroll-proportion="-6.12">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoanAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/LoanAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="45" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="111" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+            <state line="75" column="25" selection-start="2305" selection-end="2305" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -203,7 +149,61 @@
       <file leaf-file-name="Loan.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/sqlite/Loan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="1" selection-start="2132" selection-end="2132" vertical-scroll-proportion="-26.88">
+            <state line="95" column="1" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewTransactionActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/activity/NewTransactionActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="22" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/sqlite/MyDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="33" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLiteHelper.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/sqlite/SQLiteHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="11" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.70660144">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="110" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="R.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gen/no/boraj/YouBank/R.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="19" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BuildConfig.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gen/no/boraj/YouBank/BuildConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="19" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -212,29 +212,7 @@
       <file leaf-file-name="LoansActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/activity/LoansActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="34" selection-start="3894" selection-end="3894" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/TransactionAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="5" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utility.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/Utility.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
+            <state line="100" column="26" selection-start="3589" selection-end="3589" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -262,22 +240,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/newloan.xml" />
-        <option value="$PROJECT_DIR$/src/no/msys/YouBank/Utility.java" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/no/msys/YouBank/activity/NewLoanActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/manageloan.xml" />
-        <option value="$PROJECT_DIR$/res/layout/loanlist.xml" />
         <option value="$PROJECT_DIR$/src/no/msys/YouBank/TransactionAdapter.java" />
         <option value="$PROJECT_DIR$/src/no/msys/YouBank/activity/LoansActivity.java" />
         <option value="$PROJECT_DIR$/src/no/msys/YouBank/sqlite/MyDAO.java" />
         <option value="$PROJECT_DIR$/src/no/msys/YouBank/sqlite/Loan.java" />
         <option value="$PROJECT_DIR$/src/no/msys/YouBank/activity/ManageLoanActivity.java" />
         <option value="$PROJECT_DIR$/src/no/msys/YouBank/LoanAdapter.java" />
-        <option value="$PROJECT_DIR$/src/no/boraj/YouBank/LoanAdapter.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/no/boraj/YouBank/activity/LoansActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/res/layout/loanlist.xml" />
+        <option value="$PROJECT_DIR$/src/no/boraj/YouBank/Utility.java" />
+        <option value="$PROJECT_DIR$/src/no/boraj/YouBank/LoanAdapter.java" />
+        <option value="$PROJECT_DIR$/src/no/boraj/YouBank/TransactionAdapter.java" />
+        <option value="$PROJECT_DIR$/src/no/boraj/YouBank/activity/LoansActivity.java" />
+        <option value="$PROJECT_DIR$/src/no/boraj/YouBank/activity/ManageLoanActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -313,6 +291,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -383,6 +363,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="sqlite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YouBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YouBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="no" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boraj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YouBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="activity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -415,14 +425,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
+              <option name="myItemId" value="drawable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -435,23 +443,27 @@
     <property name="recentsLimit" value="5" />
     <property name="ExportedModule" value="YouBank" />
     <property name="last_opened_file_path" value="$USER_HOME$/youbank-release-key.keystore" />
-    <property name="AndroidLayoutSelectedEditor" value="android-designer" />
+    <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="AndroidRunProguardForReleaseBuild" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\BørgeAndre\IdeaProjects\YouBank\res\drawable" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="no.msys.YouBank" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\BørgeAndre\IdeaProjects\YouBank\res\drawable\drawable-xxhdpi" />
       <recent name="C:\Users\BørgeAndre\IdeaProjects\YouBank\res\drawable" />
       <recent name="C:\Users\BørgeAndre\IdeaProjects\YouBank\res\drawable\drawable-mdpi" />
       <recent name="C:\Users\BørgeAndre\IdeaProjects\YouBank\src\no\msys\YouBank\sqlite" />
@@ -490,6 +502,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -516,19 +541,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -642,19 +654,15 @@
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32856005" sideWeight="0.67038214" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2859984" sideWeight="0.67038214" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970136" sideWeight="0.6" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968154" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32961783" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290938" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14638028" sideWeight="0.53582805" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32983872" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32983872" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -662,12 +670,16 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14638028" sideWeight="0.67038214" order="0" side_tool="false" content_ui="combo" x="136" y="143" width="619" height="831" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32961783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14638028" sideWeight="0.6709062" order="0" side_tool="false" content_ui="combo" x="136" y="143" width="619" height="831" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277645" sideWeight="0.67038214" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970136" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28520286" sideWeight="0.67038214" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970136" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32961783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -736,129 +748,123 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="37" selection-start="884" selection-end="884" vertical-scroll-proportion="-11.56">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/sqlite/MyDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="241" selection-end="241" vertical-scroll-proportion="-5.44">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/sqlite/SQLiteHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/sqlite/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/TransactionAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="5" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0">
+        <state line="54" column="46" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/activity/NewTransactionActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="1" selection-start="327" selection-end="327" vertical-scroll-proportion="-8.16">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/sqlite/Loan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="1" selection-start="2132" selection-end="2132" vertical-scroll-proportion="-26.88">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/LoanAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="45" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/activity/ManageLoanActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="48" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/loanlist.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/Utility.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
+        <state line="45" column="32" selection-start="1499" selection-end="1499" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/manageloan.xml">
-      <provider selected="true" editor-type-id="android-designer">
+    <entry file="file://$PROJECT_DIR$/res/layout/loanlist.xml">
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="81" selection-start="636" selection-end="636" vertical-scroll-proportion="-4.76" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/activity/NewLoanActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/manageloan.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="37" selection-start="1788" selection-end="1790" vertical-scroll-proportion="-6.12">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/no/boraj/YouBank/Manifest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/no/boraj/YouBank/BuildConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/no/boraj/YouBank/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="110" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/activity/LoansActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="34" selection-start="3894" selection-end="3894" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="111" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+        <state line="100" column="26" selection-start="3589" selection-end="3589" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/activity/ManageLoanActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="56" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/activity/NewTransactionActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="22" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/activity/NewLoanActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="25" selection-start="2305" selection-end="2305" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/sqlite/Loan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="1" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/sqlite/MyDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="33" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/boraj/YouBank/sqlite/SQLiteHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="11" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.70660144">
           <folding />
         </state>
       </provider>
